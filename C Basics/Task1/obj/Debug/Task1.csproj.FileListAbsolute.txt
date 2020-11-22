@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\Epam AT\дз\10 ДЗ С# Основы\Task1\С Basics\bin\Debug\С Basics.exe.config
+C:\Users\user\Desktop\Epam AT\дз\10 ДЗ С# Основы\Task1\С Basics\bin\Debug\С Basics.exe
+C:\Users\user\Desktop\Epam AT\дз\10 ДЗ С# Основы\Task1\С Basics\bin\Debug\С Basics.pdb
+C:\Users\user\Desktop\Epam AT\дз\10 ДЗ С# Основы\Task1\С Basics\obj\Debug\Task1.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Epam AT\дз\10 ДЗ С# Основы\Task1\С Basics\obj\Debug\С Basics.exe
+C:\Users\user\Desktop\Epam AT\дз\10 ДЗ С# Основы\Task1\С Basics\obj\Debug\С Basics.pdb
+C:\Users\user\Desktop\Epam AT\дз\10 ДЗ С# Основы\Task1\С Basics\obj\Debug\Task1.csprojAssemblyReference.cache
