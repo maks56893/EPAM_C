@@ -17,8 +17,8 @@ namespace Collections
             Phones p5 = new Phones(5, "Motorola", "USA");
             Phones p6 = new Phones(6, "Google", "USA");
 
-            List<Phones> temp = new List<Phones>() { p1, p2, p3, p4, p5, p6 };
-            List<Phones> temp2 = temp.Where(x => x.counry == "USA").ToList();
+            List<Phones> list = new List<Phones>() { p1, p2, p3, p4, p5, p6 };
+            List<Phones> sortList = list.Where(x => x.counry == "USA").ToList();
 
             try
             {
