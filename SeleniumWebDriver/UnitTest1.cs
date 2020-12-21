@@ -26,18 +26,6 @@ namespace SeleniumWebDriver
             return true;
         }
 
-        public bool Exists(By by)
-        {
-            if (driver.FindElements(by).Count != 0)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
         [OneTimeSetUp]
         public void Setup()
         {
