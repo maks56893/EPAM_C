@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fLVA3K0bPotTf1ucpg9aFfCEqmY9X8oVidLIubtieW4HwxDYxGyKIcVJ0lpzPg5xU9u0y9IcMYrLUNzy3SQ9cg==",
+  "dgSpecHash": "0DxeyZWlzCZhy/07s10swQ9xuPgWviMTObXdQwwHuxfekgurZnyIEtqSr7BBETWrlqS5zH4fRddXRqueRql1aQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\Epam AT\\дз\\18 ДЗ Selenium WebDriver\\SeleniumWebDriver\\SeleniumWebDriver.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\git\\EPAM_C\\SeleniumWebDriver\\SeleniumWebDriver.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",

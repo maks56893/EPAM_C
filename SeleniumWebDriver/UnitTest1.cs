@@ -11,6 +11,7 @@ namespace SeleniumWebDriver
     {
 
         private IWebDriver driver;
+        private WebDriverWait wait;
 
         public bool isElementPresent(By locator)
         {
@@ -25,6 +26,18 @@ namespace SeleniumWebDriver
             return true;
         }
 
+        public bool Exists(By by)
+        {
+            if (driver.FindElements(by).Count != 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         [OneTimeSetUp]
         public void Setup()
         {
@@ -32,6 +45,7 @@ namespace SeleniumWebDriver
             driver = new ChromeDriver();
             driver.Navigate().GoToUrl("http://localhost:5000");
             driver.Manage().Window.Maximize();
+            wait = new WebDriverWait(driver, TimeSpan.FromSeconds(1));
         }
 
         [Test, Order(1)]
@@ -100,7 +114,7 @@ namespace SeleniumWebDriver
         {
             driver.FindElement(By.XPath("//a[text()=\"eda\"]/..//following-sibling::*/a[text()=\"Remove\"]")).Click();
             driver.SwitchTo().Alert().Accept();
-            Thread.Sleep(1000); 
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.InvisibilityOfElementLocated(By.XPath("//table//a[text()=\"eda\"]")));
             Assert.IsFalse(isElementPresent(By.XPath("//table//a[text()=\"eda\"]")));
         }
 
