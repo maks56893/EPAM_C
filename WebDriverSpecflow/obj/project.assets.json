@@ -7016,11 +7016,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\Epam AT\\дз\\21 ДЗ WebDriverSpecflow\\WebDriverSpecflow\\WebDriverAdv.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Documents\\git\\EPAM_C\\WebDriverSpecflow\\WebDriverAdv.csproj",
       "projectName": "WebDriverAdv",
-      "projectPath": "C:\\Users\\user\\Desktop\\Epam AT\\дз\\21 ДЗ WebDriverSpecflow\\WebDriverSpecflow\\WebDriverAdv.csproj",
+      "projectPath": "C:\\Users\\user\\Documents\\git\\EPAM_C\\WebDriverSpecflow\\WebDriverAdv.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\Epam AT\\дз\\21 ДЗ WebDriverSpecflow\\WebDriverSpecflow\\obj\\",
+      "outputPath": "C:\\Users\\user\\Documents\\git\\EPAM_C\\WebDriverSpecflow\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

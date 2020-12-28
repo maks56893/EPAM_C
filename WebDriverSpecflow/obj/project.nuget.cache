@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YEtGRqHrHdruyneDy5J+rIUZUULsqUs9Pma8IJwPAzsp7a8u9RBIJoRJIuXG2MSXUSGrGHmNy81ZZmgLuOMH/A==",
+  "dgSpecHash": "9HY3oAESfoitvyflHZrRNLax9RLZOwi9dqbW8quP4qmmt9v11IHLOXOW+avBRpj5WAs6ShEFmIhtIxog+ibxmQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\Epam AT\\дз\\21 ДЗ WebDriverSpecflow\\WebDriverSpecflow\\WebDriverAdv.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\git\\EPAM_C\\WebDriverSpecflow\\WebDriverAdv.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\bodi\\1.4.1\\bodi.1.4.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\cucumber.messages\\6.0.1\\cucumber.messages.6.0.1.nupkg.sha512",
