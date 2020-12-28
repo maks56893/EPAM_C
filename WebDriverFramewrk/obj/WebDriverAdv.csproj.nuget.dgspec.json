@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\Epam AT\\дз\\20 ДЗ WebDriver Frameworks\\WebDriverFramewrk\\WebDriverAdv.csproj": {}
+    "C:\\Users\\user\\Documents\\git\\EPAM_C\\WebDriverFramewrk\\WebDriverAdv.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\Epam AT\\дз\\20 ДЗ WebDriver Frameworks\\WebDriverFramewrk\\WebDriverAdv.csproj": {
+    "C:\\Users\\user\\Documents\\git\\EPAM_C\\WebDriverFramewrk\\WebDriverAdv.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\Epam AT\\дз\\20 ДЗ WebDriver Frameworks\\WebDriverFramewrk\\WebDriverAdv.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\git\\EPAM_C\\WebDriverFramewrk\\WebDriverAdv.csproj",
         "projectName": "WebDriverAdv",
-        "projectPath": "C:\\Users\\user\\Desktop\\Epam AT\\дз\\20 ДЗ WebDriver Frameworks\\WebDriverFramewrk\\WebDriverAdv.csproj",
+        "projectPath": "C:\\Users\\user\\Documents\\git\\EPAM_C\\WebDriverFramewrk\\WebDriverAdv.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\Epam AT\\дз\\20 ДЗ WebDriver Frameworks\\WebDriverFramewrk\\obj\\",
+        "outputPath": "C:\\Users\\user\\Documents\\git\\EPAM_C\\WebDriverFramewrk\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",

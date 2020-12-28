@@ -31,11 +31,8 @@ namespace WebDriverAdv.PO
         {
             driver.FindElement(By.XPath($"//a[text()=\"{name}\"]/..//following-sibling::*/a[text()=\"Remove\"]")).Click();
             driver.SwitchTo().Alert().Accept();
-        }
-        public void WaitLoading(IWebDriver driver, string name)
-        {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.InvisibilityOfElementLocated(By.XPath($"//table//a[text()=\"{name}\"]")));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.InvisibilityOfElementLocated(By.XPath($"//table//a[text()=\"{name}\"]"))); //ждет когда пропадет строка продукта в таблице
         }
         public bool isElementPresent(By locator)
         {

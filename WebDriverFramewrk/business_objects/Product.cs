@@ -28,5 +28,6 @@ namespace WebDriverAdv.business_objects
         }
         public Product()
         { }
+
     }
 }

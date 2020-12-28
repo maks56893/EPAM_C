@@ -22,6 +22,7 @@ namespace WebDriverAdv
         private Product eda = new Product("eda", "Beverages", "Lyngbysild", "12", "1", "111", "2", "1");
         private ProductServices productServices;
 
+
         [OneTimeSetUp]
         public void Setup()
         {
@@ -57,14 +58,7 @@ namespace WebDriverAdv
         public void CheckProduct()
         {
             Product productCheck = productServices.ReadProduct(eda, driver);            
-            Assert.AreEqual(eda.productName, productCheck.productName);
-            Assert.AreEqual(eda.categoryId, productCheck.categoryId);
-            Assert.AreEqual(eda.supplierId, productCheck.supplierId);
-            Assert.AreEqual(eda.unitPrice, productCheck.unitPrice);
-            Assert.AreEqual(eda.quantityPerUnit, productCheck.quantityPerUnit);
-            Assert.AreEqual(eda.unitsInStock, productCheck.unitsInStock);
-            Assert.AreEqual(eda.unitsOnOrder, productCheck.unitsOnOrder);
-            Assert.AreEqual(eda.reorderLevel, productCheck.reorderLevel);
+            Assert.AreEqual(eda, productCheck);
             productPage.ToAllProducts();
         }
 
@@ -80,7 +74,6 @@ namespace WebDriverAdv
         {
             loginPage = allProductsPage.Logout();
             Assert.AreEqual("Login", loginPage.TitleText());
-
         }
 
         [OneTimeTearDown]

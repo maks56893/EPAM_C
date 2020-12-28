@@ -11,7 +11,12 @@ namespace WebDriverAdv.service
     {
         ProductPage productPage;
         AllProductsPage allProductsPage;
+        private IWebDriver driver;
 
+       /*public ProductServices(IWebDriver driver)
+        {
+            this.driver = driver;
+        }*/
         public void InputProduct(Product product, IWebDriver driver)
         {
             HomePage homePage = new HomePage(driver);
@@ -31,27 +36,23 @@ namespace WebDriverAdv.service
 
         public Product ReadProduct(Product product, IWebDriver driver)
         {
+            allProductsPage = new AllProductsPage(driver);
             productPage = allProductsPage.OpenProduct(product.productName);
-
-            Product product2 = new Product
-            {
-                productName = productPage.ReadProductName(),
-                categoryId = productPage.ReadCategoryId(),
-                supplierId = productPage.ReadSupplierId(),
-                unitPrice = (Convert.ToDouble(productPage.ReadUnitPrice())).ToString(),
-                quantityPerUnit = productPage.ReadQuantityPerUnit(),
-                unitsInStock = productPage.ReadUnitsInStock(),
-                unitsOnOrder = productPage.ReadUnitsOnOrder(),
-                reorderLevel = productPage.ReadReorderLevel()                
-            };
-            return product2;
+            string productName = productPage.ReadProductName();
+            string categoryId = productPage.ReadCategoryId();
+            string supplierId = productPage.ReadSupplierId();
+            string unitPrice = Convert.ToDouble(productPage.ReadUnitPrice()).ToString();
+            string quantityPerUnit = productPage.ReadQuantityPerUnit();
+            string unitsInStock = productPage.ReadUnitsInStock();
+            string unitsOnOrder = productPage.ReadUnitsOnOrder();
+            string reorderLevel = productPage.ReadReorderLevel();
+            return new Product(productName, categoryId, supplierId, unitPrice, quantityPerUnit, unitsInStock, unitsOnOrder, reorderLevel);
         }
         public void DeleteProduct(Product product, IWebDriver driver)
         {
             productPage = new ProductPage(driver);
             
             allProductsPage.DeleteProduct(product.productName);
-            allProductsPage.WaitLoading(driver, product.productName);
 
         }
     }
