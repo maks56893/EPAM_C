@@ -11,12 +11,6 @@ namespace WebDriverAdv.service
     {
         ProductPage productPage;
         AllProductsPage allProductsPage;
-        private IWebDriver driver;
-
-       /*public ProductServices(IWebDriver driver)
-        {
-            this.driver = driver;
-        }*/
         public void InputProduct(Product product, IWebDriver driver)
         {
             HomePage homePage = new HomePage(driver);

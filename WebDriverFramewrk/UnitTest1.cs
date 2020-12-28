@@ -57,7 +57,7 @@ namespace WebDriverAdv
         [Test, Order(3)]
         public void CheckProduct()
         {
-            Product productCheck = productServices.ReadProduct(eda, driver);            
+            Product productCheck = productServices.ReadProduct(eda, driver);
             Assert.AreEqual(eda, productCheck);
             productPage.ToAllProducts();
         }

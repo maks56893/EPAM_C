@@ -29,5 +29,17 @@ namespace WebDriverAdv.business_objects
         public Product()
         { }
 
+        public override bool Equals(object obj)
+        {
+            return obj is Product product &&
+                   productName == product.productName &&
+                   categoryId == product.categoryId &&
+                   supplierId == product.supplierId &&
+                   unitPrice == product.unitPrice &&
+                   quantityPerUnit == product.quantityPerUnit &&
+                   unitsInStock == product.unitsInStock &&
+                   unitsOnOrder == product.unitsOnOrder &&
+                   reorderLevel == product.reorderLevel;
+        }
     }
 }
