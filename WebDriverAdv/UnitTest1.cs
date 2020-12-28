@@ -18,19 +18,6 @@ namespace WebDriverAdv
         private AllProductsPage allProductsPage;
         private ProductPage productPage;
 
-        public bool isElementPresent(By locator)
-        {
-            try
-            {
-                driver.FindElement(locator);
-            }
-            catch (NoSuchElementException)
-            {
-                return false;
-            }
-            return true;
-        }
-
         [OneTimeSetUp]
         public void Setup()
         {
@@ -68,7 +55,7 @@ namespace WebDriverAdv
             productPage.Submit();
 
             Assert.AreEqual("All Products", productPage.TitleText());
-            Assert.IsTrue(isElementPresent(By.XPath("//*[@class='table']//a[text()='eda']")));
+            Assert.IsTrue(allProductsPage.IsProductPresent("eda"));
         }
 
         [Test, Order(3)]
@@ -92,8 +79,8 @@ namespace WebDriverAdv
         public void Delete()
         {
             allProductsPage.DeleteProduct("eda");
-            allProductsPage.WaitLoading(driver);
-            Assert.IsFalse(allProductsPage.IsProductPresent("eda", driver));
+            allProductsPage.WaitLoading(driver, "eda");
+            Assert.IsFalse(allProductsPage.IsProductPresent("eda"));
         }
 
         [Test, Order(5)]

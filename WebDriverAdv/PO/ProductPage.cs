@@ -12,7 +12,6 @@ namespace WebDriverAdv.PO
         private IWebDriver driver;
         public IWebElement submitBtn => driver.FindElement(By.CssSelector(".btn"));
         private IWebElement toAllProductsBtn => driver.FindElement(By.XPath("//a[text()=\"Products\"]"));
-        //private IWebElement logout => driver.FindElement(By.XPath("//a[text()=\"Logout\"]"));
         private IWebElement productNameInput => driver.FindElement(By.Id("ProductName"));
         private IWebElement CategoryIdSelect => driver.FindElement(By.Id("CategoryId"));
         private IWebElement SupplierIdSelect => driver.FindElement(By.Id("SupplierId"));
@@ -21,6 +20,7 @@ namespace WebDriverAdv.PO
         private IWebElement unitsInStockInput => driver.FindElement(By.Id("UnitsInStock"));
         private IWebElement unitsOnOrderInput => driver.FindElement(By.Id("UnitsOnOrder"));
         private IWebElement reorderLevelInput => driver.FindElement(By.Id("ReorderLevel"));
+        private IWebElement Title => driver.FindElement(By.XPath("//h2"));
 
         public ProductPage(IWebDriver driver)
         {
@@ -68,24 +68,9 @@ namespace WebDriverAdv.PO
         }
         public string TitleText()
         {
-            return driver.FindElement(By.XPath("//h2")).Text;
+            return Title.Text;
         }
-        public bool isElementPresent(By locator)
-        {
-            try
-            {
-                driver.FindElement(locator);
-            }
-            catch (NoSuchElementException)
-            {
-                return false;
-            }
-            return true;
-        }
-        public bool IsStringPresent(IWebDriver driver)
-        {
-            return isElementPresent(By.XPath("//*[@class='table']//a[text()='eda']"));
-        }
+
         /////////////////////////////////////////////////
         public string ReadProductName()
         {

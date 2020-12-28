@@ -30,7 +30,7 @@ namespace WebDriverAdv.PO
 
         public string TitleText()
         {
-            return driver.FindElement(By.XPath("//h2")).Text;
+            return Title.Text;
         }
 
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8n04mhplZPEglFwF7CMP+QdAq+9/4Uj+Nr9/jwtUgf1potiNapulQ2qCDNCyD/l97XQIA523sWpF9Yyeq/tU3Q==",
+  "dgSpecHash": "fUST8oCDAkOlWqS8AFqFa6GQvQMWxztscbvqiweouc70Eq0wVRbH3D8fChR9+r1HVlM+zWpPt7E5E9LVCUIWxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\Epam AT\\дз\\19 ДЗ Selenium WebDriver Advanced\\WebDriverAdv\\WebDriverAdv.csproj",
+  "projectFilePath": "C:\\Users\\user\\Documents\\git\\EPAM_C\\WebDriverAdv\\WebDriverAdv.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\dotnetseleniumextras.pageobjects.3.11.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\dotnetseleniumextras.pageobjects.core\\3.12.0\\dotnetseleniumextras.pageobjects.core.3.12.0.nupkg.sha512",

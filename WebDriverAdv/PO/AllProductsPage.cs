@@ -32,10 +32,10 @@ namespace WebDriverAdv.PO
             driver.FindElement(By.XPath($"//a[text()=\"{name}\"]/..//following-sibling::*/a[text()=\"Remove\"]")).Click();
             driver.SwitchTo().Alert().Accept();
         }
-        public void WaitLoading(IWebDriver driver)
+        public void WaitLoading(IWebDriver driver, string name)
         {
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
-            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.InvisibilityOfElementLocated(By.XPath("//table//a[text()=\"eda\"]")));
+            wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.InvisibilityOfElementLocated(By.XPath($"//table//a[text()=\"{name}\"]")));
         }
         public bool isElementPresent(By locator)
         {
@@ -50,7 +50,7 @@ namespace WebDriverAdv.PO
             return true;
         }
 
-        public bool IsProductPresent(string name, IWebDriver driver)
+        public bool IsProductPresent(string name)
         {
             return isElementPresent(By.XPath($"//table//a[text()=\"{name}\"]"));
         }
